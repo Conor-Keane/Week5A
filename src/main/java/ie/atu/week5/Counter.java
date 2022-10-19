@@ -42,7 +42,7 @@ class Calculator {
 
     public int add()
     {
-        int firstNum = 3;
+        int firstNum = 4;
         int secondNum = 2;
         calcValue = firstNum + secondNum;
         return calcValue;

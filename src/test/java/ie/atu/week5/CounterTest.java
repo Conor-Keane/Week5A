@@ -49,7 +49,7 @@ class CalculatorTest {
     @Test
     void testAdd()
     {
-        assertEquals(5, myCalc.add());
+        assertEquals(6, myCalc.add());
     }
 
     @Test

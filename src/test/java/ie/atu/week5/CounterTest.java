@@ -37,3 +37,29 @@ class CounterTest {
     void tearDown() {
     }
 }
+
+class CalculatorTest {
+    Calculator myCalc;
+
+    @BeforeEach
+    void setUp() {
+        myCalc = new Calculator();
+    }
+
+    @Test
+    void testAdd()
+    {
+        assertEquals(5, myCalc.add());
+    }
+
+    @Test
+    void testCalculator()
+    {
+        Exception exMessage = assertThrows(IllegalArgumentException.class, () -> { new Calculator(4);});
+        assertEquals("This is not a valid number", exMessage.getMessage());
+    }
+
+    @AfterEach
+    void tearDown() {
+    }
+}

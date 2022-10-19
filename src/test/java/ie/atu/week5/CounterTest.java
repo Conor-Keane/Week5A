@@ -53,6 +53,12 @@ class CalculatorTest {
     }
 
     @Test
+    void testSubtract()
+    {
+        assertEquals(1, myCalc.subtract());
+    }
+
+    @Test
     void testCalculator()
     {
         Exception exMessage = assertThrows(IllegalArgumentException.class, () -> { new Calculator(4);});

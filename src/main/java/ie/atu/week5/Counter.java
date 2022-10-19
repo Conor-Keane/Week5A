@@ -42,9 +42,17 @@ class Calculator {
 
     public int add()
     {
-        int firstNum = 2;
-        int secondNum = 3;
+        int firstNum = 3;
+        int secondNum = 2;
         calcValue = firstNum + secondNum;
+        return calcValue;
+    }
+
+    public int subtract()
+    {
+        int firstNum = 3;
+        int secondNum = 2;
+        calcValue = firstNum - secondNum;
         return calcValue;
     }
 
